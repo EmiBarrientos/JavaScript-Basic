@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<h1>Tabla de multiplicar</h1>
+<script>
+	function lineBreak(){
+		document.write("<br><br><br>");
+		document.write("<hr>")
+
+	}
+	function println(phrase){		//include a buttom bar
+		document.write("<big>");
+		document.write(phrase);
+		document.write("</big>");
+		lineBreak();
+	}	
+
+	var numIngresado=parseInt(prompt("ingrese numero <10"));
+	var cont=1;
+	println("<h2>con while </h2>");
+	while(cont<=10){
+		println(numIngresado*cont);
+		cont++;
+	}
+
+	println("<h2>con for </h2>");
+	for(var i=1; i<=10;i++){
+		println(numIngresado*i);
+	}
+
+
+</script>

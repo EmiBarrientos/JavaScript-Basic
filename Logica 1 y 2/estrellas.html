@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<h1>Arbol de asteriscos</h1>
+<script >
+	function lineBreak(){
+		document.write("<br><br><br>");
+		document.write("<hr>");
+
+	}
+	function println(phrase){		//include a buttom bar
+		document.write("<big>");
+		document.write(phrase);
+		document.write("</big>");
+		lineBreak();
+	}	
+	document.write("<h1>");
+
+	for(var filas=0;filas<7;filas++){
+
+		for(espacios=0;espacios<6-filas;espacios++){
+			document.write(" .");
+		}
+
+		for(var columnas=0; columnas<=filas*2+1;columnas++){
+			
+			document.write("*");
+		}
+		document.write("<br>");
+	}
+
+	document.write("</h1>");
+
+	document.write("<br>");
+	document.write("<br>");
+	document.write("fin");
+
+
+
+
+</script>

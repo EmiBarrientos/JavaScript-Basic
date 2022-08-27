@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<h1>BMI</h1>
+<script>
+	function lineBreak(){
+		document.write("<br><br><br>");
+		document.write("<hr>");
+
+	}
+	function println(phrase){		//include a buttom bar
+		document.write("<big>");
+		document.write(phrase);
+		document.write("</big>");
+		lineBreak();
+	}
+
+	function imcCalculator( weight, height){
+		return (weight/(height*height)); 
+	}
+
+
+	//println("emiliano bmi is : " + imcCalculator(67,1.79));
+	//println("the bmi average from gabriela y juana is: " + (imcCalculator(61, 1.75)+imcCalculator(54, 1.65)/2));
+	var name= prompt("please, enter your name");
+	var weight=prompt("hi "+ name+", please enter your weight");
+	var height=prompt("now, "+ name+", please enter your height");
+	var imc= imcCalculator(weight,height);
+	println("okey, "+name+", your bmi is: "+imc);
+	
+	if(imc<18.5){
+		println("you are Underweight ");
+	}
+
+	if((imc<24.9) && (imc>18.5)){
+		println("you are Healthy ");	
+	}
+
+	if((imc<29.9) && (imc>25)){
+		println("you are Overweight");	
+	}
+	if((imc<39.9) && (imc>30)){
+		println("you are Obese");	
+	}
+	
+	if(imc>40){
+ 		println("you are Extremely Obese");	
+	}
+
+</script>

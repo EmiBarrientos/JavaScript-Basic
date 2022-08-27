@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<h1>Programa que calcula la media de edades de una familia</h1>
+<script>
+	function lineBreak(){
+		document.write("<br><br><br>");
+		document.write("<hr>");
+
+	}
+	function println(phrase){		//include a buttom bar
+		document.write("<big>");
+		document.write(phrase);
+		document.write("</big>");
+		lineBreak();
+	}	
+
+	
+	var cantPersonas=parseInt(prompt("ingrese cantidad de personas"));
+	var edades=0;
+	var cont=1;
+	while(cont<cantPersonas){
+		edades=parseInt(prompt("ingrese edad de la persona"+cont));
+		edades=edades+edades;
+		cont++;
+	}
+
+	println("<h1> Programa para calcular numeros pares hasta el 100</h1>");
+
+	var i=0;
+	while(i<=100){
+		if(i%2==0){
+			println(i);
+		}
+		i++;
+	}
+
+	println("fin");
+
+
+
+</script>

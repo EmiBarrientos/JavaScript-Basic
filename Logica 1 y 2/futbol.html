@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<h1>BMI</h1>
+<script ">
+	function lineBreak(){
+		document.write("<br><br><br>");
+		document.write("<hr>")
+
+	}
+	function println(phrase){		//include a buttom bar
+		document.write("<big>");
+		document.write(phrase);
+		document.write("</big>");
+		lineBreak();
+	}
+
+	var victorias=parseInt(prompt("ingrese la cantidad de victorias del equipo"));
+	var empates=parseInt(prompt("ingrese la cantidad de empates del equipo"));
+	var derrotas=parseInt(prompt("ingrese la cantidad de derrotas del equipo"));
+	var puntosAnioPasado=parseInt(prompt("ingrese los puntos que su equipo consiguio la temporada pasada"));
+	var totalPartidos=victorias+empates+derrotas;
+	var puntos=(victorias*3)+empates;
+	println("la cantidad de puntos que tiene tu equipo es de: "+puntos);
+	println("el promedio que tiene tu equipo es de "+(puntos/totalPartidos));
+
+	if(puntos<puntosAnioPasado){
+		println("su equipo esta peor que el año pasado");
+	}
+	if(puntos>puntosAnioPasado){
+		println("su equipo esta mejor que el año pasado");
+	}
+	if(puntos==puntosAnioPasado){
+		println("su equipo esta igual que el año pasado");
+	}
+
+
+
+</script>

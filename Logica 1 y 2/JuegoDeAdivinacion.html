@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1>Juego de adivinacion</h1>
+<script >
+	function lineBreak(){
+		document.write("<br><br><br>");
+		document.write("<hr>")
+
+	}
+	function println(phrase){		//include a buttom bar
+		document.write("<big>");
+		document.write(phrase);
+		document.write("</big>");
+		lineBreak();
+	}	
+
+
+	var intentos=1;
+	var numRandom= Math.round(Math.random()*10);
+	
+
+	while(intentos<=3){
+		var numIngresado=parseInt(prompt("ingrese un numero <0 y >10"));
+		
+		if(numIngresado==numRandom){
+			println("adivino el numero!!  "+ numRandom);
+			alert("acertaste en el intento:  "+ intentos);
+			intentos=4;
+		}else{
+			println("no adivino el numero :( el numero era: "+numRandom);
+		}
+		intentos++;
+	}
+	println("fin");
+
+</script>
